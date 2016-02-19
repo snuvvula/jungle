@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="icon" href="favicon.ico" type="image/ico">
 
-    <title></title>
+    <title>EdgeItJungle</title>
 	<meta charset="utf-8" />
-	    <link href="css/style.css" rel="stylesheet">
+	    <link href="css/main.css" rel="stylesheet">
 
 	 <link href="js/bootstrap.min.js" rel="stylesheet">
 	 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script src="jquery-1.12.0.min.js"></script>
 <script>
+function apple(){
+
+var b1=document.getElementById('itemno').value;
+var b2=b1 * 1200;
+document.getElementById("demo").innerHTML="$" + b2;
+}
+function select1() 
+{
+                      if (document.getElementById('itemno').value) {
+                          single();
+                      }
 $(function() {
     $("div.star-rating > s, div.star-rating-rtl > s").on("click", function(e) {
         var numStars = $(e.target).parentsUntil("div").length+1;
@@ -18,11 +30,14 @@ $(function() {
     });
     </script>
 <style>
+li {
+	display:inline;
+}
 .star-rating s:hover {
-    color: red;
+    color:blue;
 }
 .star-rating-rtl s:hover {
-    color: red;
+    color: blue;
 }
 
 .star-rating s,
@@ -51,6 +66,36 @@ $(function() {
 </style>
 </head>
 <body>
+
+	 <div class="row">
+                     <a href="home.html" ><img src="images/logo.png" alt="logo" align="left" width="100" height="100" ;/> </a> 
+                   
+<nav>
+        <div>
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li> <a href="register.html"><span class="glyphicon glyphicon-user"></span> REGISTER</a></li>
+                <li><a href="Login.html"><span class="glyphicon glyphicon-log-in"> LOGIN</a></li>
+                <li><a href="">VIEW CART<span class="glyphicon glyphicon-shopping-cart"></span></a><li>
+            </ul>
+
+</div>
+        </div>
+    </div>
+</nav>
+  <div class="row">
+                <div>
+                     <ul class="nav navbar-nav">
+                       <li class="top"><a class="items" href="home.html">HOME </a></li>
+                        <li class="top"><a class="items" href="http://www.dealsofamerica.com/">TODAY'S DEALS </a></li>
+                        <li class="top"> <a class="items" href="electronics.html">ELECTRONICS</a></li>
+                        <li class="top"><a class="items" href="clothing.html">CLOTHING</a></li>
+                        <li class="top"><a class="items" href="home&garden.html">HOME&GARDEN</a></li>
+                        <li class="top"><a class="items" href="shipping.html">SHIPPING  RETURNS</a></li>
+                        <li class="top"><a class="items" href="contact.html">CONTACT US</a></li>
+                    </ul>
+
+
     <table >
         <tr>
             <td width="45%">
@@ -75,7 +120,7 @@ OS X 10.4.9</h5>
 <form action="#">
  
  <label for="number">Select a number</label>
-    <select name="number" id="number">
+    <select name="number" id="itemno">
       <option selected="selected">1</option>
       <option>2</option>
       <option>3</option>
@@ -103,9 +148,14 @@ OS X 10.4.9</h5>
 
 <h4>Review</h4>
 <div class="star-rating"><s class="rated"><s class="rated"><s class="rated"><s><s></s></s></s></s></s></div>
+<ul>
+	<li><strong>Price: $1200.99</strong></li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="#" class="btn btn-info btn-lg">
-	<span class="glyphicon glyphicon-shopping-cart"></span>Add To Cart
-</a>
+	
+	<li><span class="glyphicon glyphicon-shopping-cart"></span>Add To Cart</li>
+
+</a></h4>
+</ul>
 	</td>
         </tr>
     </table>

@@ -1,4 +1,9 @@
-
+.span{
+    background-color: black;
+}
+.bar{
+    background-color: #FF847C;
+}
 .star-rating s:hover {
     color: red;
 }

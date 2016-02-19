@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
+      <link rel="icon" href="favicon.ico" type="image/ico">
+
     <meta charset="UTF-8">
     <title>EDGEIT JUNGLE</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <script src="sign.js"></script>
     <link href="js/bootstrap.min.js" rel="stylesheet">
     <link href="js/npm.js" rel="stylesheet">
@@ -17,44 +19,28 @@
 
 </head>
 <body>
-   <div class="row">
+
+     <div class="row">
                      <a href="home.html" ><img src="images/logo.png" alt="logo" align="left" width="100" height="100" ;/> </a> 
-<nav class="nav navbar-default navbar-inverse">
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                   
+<nav>
+        <div class="bar">
             <ul class="nav navbar-nav navbar-right">
-                <li id="contact">CALL US ON +1 (000) 000-000 | </li>
-                <li> <a href="register.html">REGISTER</a></li>
-                <li><a href="Login.html">LOGIN</a></li>
+                <li> <a href="register.html"><span class="glyphicon glyphicon-user"></span> REGISTER</a></li>
+                <li><a href="Login.html"><span class="glyphicon glyphicon-log-in"> LOGIN</a></li>
                 <li><a href="">VIEW CART<span class="glyphicon glyphicon-shopping-cart"></span></a><li>
             </ul>
 
-
+</div>
         </div>
     </div>
 </nav>
-<div class="container">
-    <div class="row">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="col-lg-6">
-                </div>
-                <div class="col-lg-6">
-                    <div class="pull-right">
-                            <input type="text" placeholder="Search for a product">
-                          <button type="button" class="btn btn-default btn-sm">
-                            <span class="glyphicon glyphicon-search"></span> Search 
-                            </button>
-                        </form>
-                       
-                    </div> 
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 col-md-6 col-sm-6">
 
-                <div style="background-color:"gray" class="jumbotron">
-                    <ul class="nav navbar-nav">
+
+
+        <div class="row">
+                <div>
+                     <ul class="nav navbar-nav">
                        <li class="top"><a class="items" href="home.html">HOME </a></li>
                         <li class="top"><a class="items" href="http://www.dealsofamerica.com/">TODAY'S DEALS </a></li>
                         <li class="top"> <a class="items" href="electronics.html">ELECTRONICS</a></li>
@@ -62,49 +48,51 @@
                         <li class="top"><a class="items"href="home&garden.html">HOME&GARDEN</a></li>
                         <li class="top"><a class="items" href="shipping.html">SHIPPING  RETURNS</a></li>
                         <li class="top"><a class="items" href="contact.html">CONTACT US</a></li>
-
                     </ul>
-                </div><!--jumb-->
-            </div><!--12-->
-        </div> <!--row-->
+                    
+    </div>
+  </div>
 
-  <h1>SignUp</h1>
+<div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+                <img src="images/join.jpg" width="400" height="400" />
+              </div>
+           <div class="col-lg-4">   
+
+            <img src="images/signup.jpg" height="40"> 
 <form action="action_page.php" ><br>
-  First name:<br>
-  <input type="text" name="firstname" >
-  <br>
+  <b>First name:<br>
+  <input type="text" name="firstname" ><br>
   Last name:<br>
   <input type="text" name="lastname" >
   <br>
   Email Id:<br>
-  <input type="text" name="Email Id">
+  <input type="text" name="Email Id"  placeholder=" Yourname@email.com" required>
   <br>
  Phone Number:<br>
   <input type="text" name="Phone Number">
-  <br>
- Gender:<br>
-  <input type="radio" name="gender" value="male" > Male<br>
-  <input type="radio" name="gender" value="female"> Female<br>
-Password:<br>
+  
+  <p>
+ <label for="Gender">Gender:</label><br>
+<select class="Gender:" id="Gender">
+  <option>Male</option>
+  <option>Female</option>
+</select><br></p>
+Create Password:<br>
   <input type="text" name="Password" placeholder="password" required>
   <br>
-  Confirm Password:<br>
+  Confirm your Password:<br>
   <input type="text" name="Confirm Password" placeholder="Enter the same password" required>
   
   <p>
   <input type="submit" value="Submit">
 </p>
-<h2 align="center"><i>Thank you for visiting the website!</i></h2>
-  <div id="footer" align="right">
-  Mobile:(999)-999-9999<br>Fax:(999)-999-9999<br><a href="mailto:operations@edgeitjungle.com" target="_blank">E-mail:operations@edgeitjungle.com</a>
-     <br>
-<h3>Follow Us On</h3>          
-      Facebook: <a href="https://www.facebook.com/" target="_blank"> <img src="images/facebook.png" alt="facebook"  width="25" height="25" ;/></a>
-      Youtube: <a href="https://www.youtube.com/ target="_blank"> <img src="images/utube.png" alt="youtube" width="25" height="25" ;/>    </a>
-      Linked In  <a href="https://in.linkedin.com/ target="_blank"><img src="images/linkedin.jpg" alt="twitter" width="25" height="25" ;/></a>
-<h5 align="center"><i>Copyrights Reserved @EdgeItJUngle</i> </h5>          
-          </div>
+</b>
 
  </form>
+</div>
+</div>
+</div>
 </body>
 </html>
